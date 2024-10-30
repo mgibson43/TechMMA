@@ -1,27 +1,44 @@
+@font-face {
+  font-family: MontLight;
+  src: url("/public/fonts/Mont-ExtraLightDEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontHeavy;
+  src: url("/public/fonts/Mont-HeavyDEMO.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: poppins;
 }
 
 ul {
   list-style: none;
-  text-decoration: none;
 }
 
-li {
+a {
   text-decoration: none;
+  color: #333;
+  font-size: 16px;
 }
 
 .container {
   max-width: 1600px;
-  margin: auto 0;
+  margin: 0 auto;
 }
 
 .container-header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  align-items: center;
+}
+
+.icon-header {
+  width: 130px;
 }
 
 .container-nav {
@@ -29,10 +46,52 @@ li {
   gap: 1rem;
 }
 
-.program {
-  display: block;
+.nav-link {
+  padding: 1rem 1.5rem;
+  background-color: #333;
+  color: #fff;
+
+  border-radius: 10px;
 }
 
-.hidden {
-  display: none;
+.nav-link:hover {
+  background-color: #555;
+}
+
+li:last-child .nav-link {
+  background-color: #b10707;
+  font-weight: 700;
+}
+
+li:last-child .nav-link:hover {
+  background-color: #830c0c;
+}
+
+.socials {
+  position: relative;
+  left: 140px;
+  bottom: -25px;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.social {
+  width: 20px;
+}
+
+
+@media(max-width: 1048px) {
+  a {
+    font-size: 14px;
+  }
+
+  .nav-link {
+    padding: .7rem 1.2rem;
+  }
+
+  .socials {
+    left: 105px;
+    bottom: -20px;
+  }
 }

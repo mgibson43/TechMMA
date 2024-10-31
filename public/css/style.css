@@ -80,6 +80,61 @@ li:last-child .nav-link:hover {
   width: 20px;
 }
 
+.hero {
+  display: block;
+  height: 70vh;
+  width: 100vw;
+  position: relative;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1.5rem;
+
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.hero-title {
+ 
+}
+
+.hero-text {
+  font-weight: 600;
+}
+
+.hero-btn {
+  padding: .7rem 1.5rem;
+  background-color: #b10707;
+  color: #fff;
+  font-weight: 700;
+
+  border-radius: 10px;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background-image: url('/public/images/Hero-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: brightness(50%);
+}
+
 
 @media(max-width: 1048px) {
   a {

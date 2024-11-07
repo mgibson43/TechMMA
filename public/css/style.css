@@ -1,11 +1,11 @@
 @font-face {
   font-family: MontLight;
-  src: url("/public/fonts/Mont-ExtraLightDEMO.otf") format("opentype");
+  src: url("/fonts/Mont-ExtraLightDEMO.otf") format("opentype");
 }
 
 @font-face {
   font-family: MontHeavy;
-  src: url("/public/fonts/Mont-HeavyDEMO.otf") format("opentype");
+  src: url("/fonts/Mont-HeavyDEMO.otf") format("opentype");
 }
 
 * {
@@ -125,17 +125,11 @@ li:last-child .nav-link:hover {
   height: 80%;
   z-index: -1;
 
-  background-image: url('/public/images/Hero-img.jpg');
+  background-image: url('/images/Hero-img.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   filter: brightness(50%);
-}
-
-.programs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .program-card {
@@ -146,7 +140,7 @@ li:last-child .nav-link:hover {
   gap: 1rem;
 
   margin-bottom: 4rem;
-  width: 600px;
+  width: 500px;
   text-align: center;
 }
 

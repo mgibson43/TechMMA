@@ -18,8 +18,11 @@
   <meta property="og:url" content="https://techmmaacademy.com/">
   <meta name="Twitter:description" content="Our Kids Martial Arts, Fitness Classes and Kids Jiu Jitsu and Wrestling programs are excellent choices for self defense, discipline and fitness. Learn more about our martial arts classes in Christiansburg now!">
   <link rel="publisher" href="https://goo.gl/maps/Z35PmxHVcgspk3c16">
-  <link rel="stylesheet" href="/public/css/style.css">
-  <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -27,10 +30,10 @@
 </head>
 <body>
   <header class="container container-header">
-    <a href="/"><img class="icon-header" src="/public/images/logo.webp" alt="TechMMA Logo"></a>
+    <a href="/"><img class="icon-header" src="/images/logo.webp" alt="TechMMA Logo"></a>
     <nav>
       <ul class="container-nav">
-        <li class="programs">
+        <li class="nav-item">
           <a href="#" class="nav-link" title="Adult Programs" target="_self">Adult Programs</a>
           <!-- <ul class="nav-subtab hidden">
             <li><a href="#" title="Combat Fitness" target="_self">Combat Fitness</a></li>
@@ -42,7 +45,8 @@
             <li><a href="#" title="Private training" target="_self">Private training</a></li>
           </ul> -->
         </li>
-        <li class="programs">
+
+        <li class="nav-item">
           <a href="#" class="nav-link" title="Kids Programs" target="_self">Kids Programs</a>
           <!-- <ul class="nav-subtab hidden">
             <li><a href="#" title="Kids TKD/Kickboxing" target="_self">Kids TKD/Kickboxing</a></li>
@@ -53,15 +57,20 @@
             <li><a href="#" title="Birthday Parties" target="_self">Birthday Parties</a></li>
           </ul> -->
         </li>
+
         <!-- <li><a href="#" title="Reviews" target="_self">Reviews</a></li>
         <li><a href="#" title="Instructors" target="_self">Instructors</a></li>
         <li><a href="#" title="Blog" target="_self">Blog</a></li> -->
-        <li><a href="#" class="nav-link" title="Schedule" target="_self">Schedule</a></li>
-        <li><a href="#" class="nav-link" title="Contact Us" target="_self">Contact Us</a></li>
-        <li><a href="#" class="nav-link" title="Get Started" target="_self">GET STARTED</a>
+        <li class="nav-item"><a href="#" class="nav-link" title="Schedule" target="_self">Schedule</a></li>
+
+        <li class="nav-item"><a href="#" class="nav-link" title="Contact Us" target="_self">Contact Us</a></li>
+
+        <li class="nav-item"><a href="#" class="nav-link" title="Get Started" target="_self">GET STARTED</a>
         <div class="socials">
           <a href="https://www.instagram.com/techmma/" target="_blank"><svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+
           <a href="https://www.facebook.com/perrytechmma/" target="_blank"><svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg></a>
+
           <a href="https://www.google.com/maps/place/Tech+MMA+%26+Fitness+Academy/@37.17363,-80.418071,15z/data=!4m5!3m4!1s0x0:0xb929628054e426d3!8m2!3d37.17363!4d-80.418071?shorturl=1&shorturl=1" target="_blank"><svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg></a>
         </div></li>
       </ul>
@@ -81,89 +90,109 @@
       </div>
     </section>
     <section class="programs container">
-      <div class="">
-        <div class="program-card program-card-1">
-          <img class="program-img" src="/public/images/kids-martial-arts.webp" alt="Kids TKD/Kickboxing">
-          <h3>Kids TKD/Kickboxing</h3>
-          <p>Treat your child to the best Kids Martial Arts classes in Christiansburg. We use the world of traditional martial arts training to offer students skills like courage, communication, and so much more. Join us here at Tech MMA and see it all for yourself!</p>
-          <a href="#">LEARN MORE</a>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="program-card program-card-1 swiper-slide">
+            <img class="program-img" src="/images/kids-martial-arts.webp" alt="Kids TKD/Kickboxing">
+            <h3>Kids TKD/Kickboxing</h3>
+            <p>Treat your child to the best Kids Martial Arts classes in Christiansburg. We use the world of traditional martial arts training to offer students skills like courage, communication, and so much more. Join us here at Tech MMA and see it all for yourself!</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="program-card program-card-2 swiper-slide">
+            <img class="program-img" src="/images/combat-fit.webp" alt="Combat Fitness">
+            <h3>Combat Fitness</h3>
+            <p>Our Combat Fit group class offers a dynamic fitness program that blends cardio, weight training and athletic exercises that maximize your time in the gym. These classes are fun and accommodating, with exercise variations if needed, but you’ll leave exhausted, feeling accomplished, and looking forward to the next session!</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="program-card program-card-3 swiper-slide">
+            <img class="program-img" src="/images/kids-bjj.webp" alt="Kids BJJ/Wrestling">
+            <h3>Kids BJJ/Wrestling</h3>
+            <p>At Tech MMA in Christiansburg, we offer a Kids Brazilian Jiu Jitsu and Wrestling class that can help any age group! We start enrolling kids as young as age 5 in order to start imparting the benefits that BJJ can offer. Come see what we're all about & get your child started in BJJ today!</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="program-card program-card-4 swiper-slide">
+            <img class="program-img" src="/images/kickboxing.webp" alt="Cardio Kickboxing">
+            <h3>Cardio Kickboxing</h3>
+            <p>Our kickboxing program will give you the opportunity to torch calories and get that lean, toned look in no time. Get started with the best workout in Christiansburg and see results faster than ever! Kickboxing provides a fun, high-energy, dynamic workout that's great for anyone.</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="program-card program-card-5 swiper-slide">
+            <img class="program-img" src="/images/krav-maga.webp" alt="Krav Maga">
+            <h3>Krav Maga</h3>
+            <p>Combine the best parts of strength training and effective self-defense skills in our Krav Maga classes. We’re helping people of all fitness levels stay active and learn how to defend themselves in any situation.</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="program-card program-card-6 swiper-slide">
+            <img class="program-img" src="/images/Ninja-Warrior.webp" alt="Kids Ninja Warrior">
+            <h3>Kids Ninja Warrior</h3>
+            <p>Our ANWA training here at Tech MMA is the perfect way for students all across our community to stay active and challenge themselves with fun and exciting instruction.</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="program-card program-card-7 swiper-slide">
+            <img class="program-img" src="/images/bjj.webp" alt="Brazilian Jiu Jitsu">
+            <h3>Brazilian Jiu Jitsu</h3>
+            <p>An amazing workout and iron-clad self-defense skills are at your fingertips with Tech MMA. Our unique style of Jiu-Jitsu will teach you the most effective self-defense in the world while building your muscle and improving your day-to-day life with increased health and happiness</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="program-card program-card-8 swiper-slide">
+            <img class="program-img" src="/images/after-school.webp" alt="After School Program">
+            <h3>After School Program</h3>
+            <p>Our after school care program at Tech MMA helps kids from across Christiansburg and beyond stay active and learning throughout the day. From providing homework time to offering Ninja Warrior Training, our goal is to keep after school care stress-free for parents and fun for kids.</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="program-card program-card-9 swiper-slide">
+            <img class="program-img" src="/images/summer-camps3.webp" alt="Summer Camps">
+            <h3>Summer Camps</h3>
+            <p>Our Camps are high-energy fun for students of all ages. We are proud to offer the best blend of professional martial arts training and educational opportunities. Join us here in Christiansburg this year!</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="program-card program-card-10 swiper-slide">
+            <img class="program-img" src="/images/full-contact-kickboxing.webp" alt="Full Contact Kickboxing">
+            <h3>Full Contact Kickboxing</h3>
+            <p>Our Full Contact Kickboxing program gives you the best in high-intensity workouts that will help you lose weight and the best in self-defense training that will empower you throughout your daily life. Join us at Tech MMA in Christiansburg today!</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="program-card program-card-11 swiper-slide">
+            <img class="program-img" src="/images/mma.webp" alt="Mixed Martial Arts">
+            <h3>Mixed Martial Arts</h3>
+            <p>Our MMA training has been handcrafted over several years by championship fighters and world-class coaches. Our system has been proven to support everyday men and women in becoming fit and strong, help professional athletes win out on titles, and get Christiansburg moving. Discover how we can help you achieve your goals through MMA!</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="program-card program-card-12 swiper-slide">
+            <img class="program-img" src="/images/private-training.webp" alt="Private Training">
+            <h3>Private Training</h3>
+            <p>Get the most out of every session by enrolling in our Private Training. We offer one-on-one training sessions by appointment, which will allow you to create a personalized training routine with one of our awesome instructors. Improve your Jiu Jitsu skills, build your fitness, lose weight... whatever your goals are, we'll help you achieve them.</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="program-card program-card-13 swiper-slide">
+            <img class="program-img" src="/images/bday-parties.webp" alt="Birthday Parties">
+            <h3>Birthday Parties</h3>
+            <p>Our Birthday Parties are offering students all across Christiansburg the chance to take on exciting martial arts lessons and plenty of fun games and activities. PLUS, we take care of everything from setup to clean up to entertainment!</p>
+            <a href="#">LEARN MORE</a>
+          </div>
         </div>
-        <div class="program-card program-card-2">
-          <img class="program-img" src="/public/images/combat-fit.webp" alt="Combat Fitness">
-          <h3>Combat Fitness</h3>
-          <p>Our Combat Fit group class offers a dynamic fitness program that blends cardio, weight training and athletic exercises that maximize your time in the gym. These classes are fun and accommodating, with exercise variations if needed, but you’ll leave exhausted, feeling accomplished, and looking forward to the next session!</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-        <div class="program-card program-card-3">
-          <img class="program-img" src="/public/images/kids-bjj.webp" alt="Kids BJJ/Wrestling">
-          <h3>Kids BJJ/Wrestling</h3>
-          <p>At Tech MMA in Christiansburg, we offer a Kids Brazilian Jiu Jitsu and Wrestling class that can help any age group! We start enrolling kids as young as age 5 in order to start imparting the benefits that BJJ can offer. Come see what we're all about & get your child started in BJJ today!</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-        <div class="program-card program-card-4">
-          <img class="program-img" src="/public/images/kickboxing.webp" alt="Cardio Kickboxing">
-          <h3>Cardio Kickboxing</h3>
-          <p>Our kickboxing program will give you the opportunity to torch calories and get that lean, toned look in no time. Get started with the best workout in Christiansburg and see results faster than ever! Kickboxing provides a fun, high-energy, dynamic workout that's great for anyone.</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-        <div class="program-card program-card-5">
-          <img class="program-img" src="/public/images/krav-maga.webp" alt="Krav Maga">
-          <h3>Krav Maga</h3>
-          <p>Combine the best parts of strength training and effective self-defense skills in our Krav Maga classes. We’re helping people of all fitness levels stay active and learn how to defend themselves in any situation.</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-        <div class="program-card program-card-6">
-          <img class="program-img" src="/public/images/Ninja-Warrior.webp" alt="Kids Ninja Warrior">
-          <h3>Kids Ninja Warrior</h3>
-          <p>Our ANWA training here at Tech MMA is the perfect way for students all across our community to stay active and challenge themselves with fun and exciting instruction.</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-        <div class="program-card program-card-7">
-          <img class="program-img" src="/public/images/bjj.webp" alt="Brazilian Jiu Jitsu">
-          <h3>Brazilian Jiu Jitsu</h3>
-          <p>An amazing workout and iron-clad self-defense skills are at your fingertips with Tech MMA. Our unique style of Jiu-Jitsu will teach you the most effective self-defense in the world while building your muscle and improving your day-to-day life with increased health and happiness</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-        <div class="program-card program-card-8">
-          <img class="program-img" src="/public/images/after-school.webp" alt="After School Program">
-          <h3>After School Program</h3>
-          <p>Our after school care program at Tech MMA helps kids from across Christiansburg and beyond stay active and learning throughout the day. From providing homework time to offering Ninja Warrior Training, our goal is to keep after school care stress-free for parents and fun for kids.</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-        <div class="program-card program-card-9">
-          <img class="program-img" src="/public/images/summer-camps3.webp" alt="Summer Camps">
-          <h3>Summer Camps</h3>
-          <p>Our Camps are high-energy fun for students of all ages. We are proud to offer the best blend of professional martial arts training and educational opportunities. Join us here in Christiansburg this year!</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-        <div class="program-card program-card-10">
-          <img class="program-img" src="/public/images/full-contact-kickboxing.webp" alt="Full Contact Kickboxing">
-          <h3>Full Contact Kickboxing</h3>
-          <p>Our Full Contact Kickboxing program gives you the best in high-intensity workouts that will help you lose weight and the best in self-defense training that will empower you throughout your daily life. Join us at Tech MMA in Christiansburg today!</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-        <div class="program-card program-card-11">
-          <img class="program-img" src="/public/images/mma.webp" alt="Mixed Martial Arts">
-          <h3>Mixed Martial Arts</h3>
-          <p>Our MMA training has been handcrafted over several years by championship fighters and world-class coaches. Our system has been proven to support everyday men and women in becoming fit and strong, help professional athletes win out on titles, and get Christiansburg moving. Discover how we can help you achieve your goals through MMA!</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-        <div class="program-card program-card-12">
-          <img class="program-img" src="/public/images/private-training.webp" alt="Private Training">
-          <h3>Private Training</h3>
-          <p>Get the most out of every session by enrolling in our Private Training. We offer one-on-one training sessions by appointment, which will allow you to create a personalized training routine with one of our awesome instructors. Improve your Jiu Jitsu skills, build your fitness, lose weight... whatever your goals are, we'll help you achieve them.</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-        <div class="program-card program-card-13">
-          <img class="program-img" src="/public/images/bday-parties.webp" alt="Birthday Parties">
-          <h3>Birthday Parties</h3>
-          <p>Our Birthday Parties are offering students all across Christiansburg the chance to take on exciting martial arts lessons and plenty of fun games and activities. PLUS, we take care of everything from setup to clean up to entertainment!</p>
-          <a href="#">LEARN MORE</a>
-        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
   </main>
-
-  <script src="/public/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script type="module" src="/js/main.js"></script>
 </body>
 </html>

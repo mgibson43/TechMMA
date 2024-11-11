@@ -89,23 +89,29 @@ li:last-child .nav-link:hover {
 
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
+  margin-bottom: -4rem;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 1.5rem;
 
   padding: 2rem;
   margin-bottom: 3rem;
-  width: 40%;
+  width: 1600px;
+}
+
+.hero-title {
+  max-width: 45%;
 }
 
 .hero-text {
   font-weight: 600;
+  max-width: 40%;
 }
 
 .hero-btn {
@@ -132,22 +138,47 @@ li:last-child .nav-link:hover {
   filter: brightness(50%);
 }
 
-.program-card {
+.programs {
+  margin-bottom: 98px;
+}
+
+.programs-title {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  font-size: 40px;
+}
+
+.program-card,
+.review-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 
-  margin-bottom: 4rem;
-  width: 500px;
+  width: 350px;
+  margin: 0 auto;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .program-img {
-  width: 400px;
+  width: 350px;
   border-radius: 10px;
   box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.107);
+}
+
+.program-text {
+  margin-bottom: .5rem;
+}
+
+.program-card a,
+.review-card a {
+  padding: .5rem 1rem;
+  background-color: #b10707;
+  color: #fff;
+  border-radius: 10px;
 }
 
 

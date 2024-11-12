@@ -142,7 +142,8 @@ li:last-child .nav-link:hover {
   margin-bottom: 98px;
 }
 
-.programs-title {
+.programs-title,
+.reviews-title {
   text-align: center;
   margin-bottom: 3rem;
 
@@ -179,6 +180,29 @@ li:last-child .nav-link:hover {
   background-color: #b10707;
   color: #fff;
   border-radius: 10px;
+}
+
+.reviews {
+  padding: 98px 0;
+  background-color: #4287f5;
+}
+
+.reviews-title {
+  color: #fff;
+}
+
+.review-img {
+  width: 100px;
+  border-radius: 100px;
+}
+
+.review-name,
+.review-text {
+  color: #fff;
+}
+
+.reviews div div .swiper-wrapper {
+  margin-bottom: 2rem;
 }
 
 

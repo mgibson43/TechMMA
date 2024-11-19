@@ -25,6 +25,10 @@ a {
   font-size: 16px;
 }
 
+fieldset {
+  border: none;
+}
+
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -175,16 +179,96 @@ li:last-child .nav-link:hover {
 }
 
 .program-card a,
-.review-card a {
-  padding: .5rem 1rem;
+.review-card a,
+.about-link {
+  padding: .75rem 1.5rem;
   background-color: #b10707;
   color: #fff;
   border-radius: 10px;
+  font-weight: 600;
+}
+
+.program-card a:hover,
+.review-card a:hover {
+  background-color: #830c0c;
+}
+
+.form {
+  background-color: #444;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.form-info {
+  display: flex;
+  gap: 2rem;
+}
+
+.form-input {
+  padding: .75rem 1em;
+  width: 40vw;
+  max-width: 24rem;
+  background-color: #eee;
+
+  border: none;
+  border-radius: 10px;
+}
+
+.form-submit {
+  background-color: #b10707;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 10px;
+
+  padding: .75rem 1.5rem;
+}
+
+.form-submit:hover {
+  background-color: #830c0c;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+
+  padding: 0 2rem;
+  margin: 64px 0;
+}
+
+.about-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .reviews {
   padding: 98px 0;
   background-color: #4287f5;
+}
+
+.review-card {
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.107);
+  background-color: #333;
 }
 
 .reviews-title {

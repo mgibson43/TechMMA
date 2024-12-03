@@ -196,12 +196,13 @@ li:last-child .nav-link:hover {
 .form {
   background-color: #444;
   color: #fff;
-  padding: 4rem 0;
+  padding: 8rem 0;
 }
 
 .form-title {
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 40px;
 }
 
 .form-container form {
@@ -245,10 +246,12 @@ li:last-child .nav-link:hover {
 .about-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   gap: 4rem;
 
   padding: 0 2rem;
-  margin: 64px 0;
+  margin-top: 98px;
+  margin-bottom: 98px;
 }
 
 .about-article {
@@ -257,6 +260,11 @@ li:last-child .nav-link:hover {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+
+.about-container img {
+  width: 30%;
+  height: 70%;
 }
 
 .reviews {
@@ -287,6 +295,45 @@ li:last-child .nav-link:hover {
 
 .reviews div div .swiper-wrapper {
   margin-bottom: 2rem;
+}
+
+.quick-access {
+  margin: 98px 0;
+}
+
+.quick-access-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.quick-access-content {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.quick-access-contact {
+  max-width: 125px;
+}
+
+.quick-access-container h4 {
+  font-size: 24px;
+  color: #333;
+}
+
+.quick-access-container ul {
+  line-height: 25px;
+}
+
+.quick-access-container a {
+  display: flex;
+  gap: .5rem;
+
+  color: #777;
+  fill: #777;
 }
 
 

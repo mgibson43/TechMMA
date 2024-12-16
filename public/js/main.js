@@ -22,7 +22,7 @@ const swiper = new Swiper('.swiper', {
     0: {
       slidesPerView: 1
     },
-    740: {
+    850: {
       slidesPerView: 2
     },
     1096: {
@@ -30,6 +30,23 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+
+const open = document.querySelector('.open-menu');
+const close = document.querySelector('.close-menu');
+const menu = document.querySelector('.container-nav');
+
+function openMenu() {
+  menu.style.right = "0";
+  close.style.display = "block";
+}
+
+function closeMenu() {
+  close.style.display = "none";
+  menu.style.right = "-100%";
+}
+
+open.addEventListener('click', openMenu);
+close.addEventListener('click', closeMenu);
 
 // const navLists = document.querySelectorAll('.nav-subtab');
 // const programs = document.querySelectorAll('.programs');

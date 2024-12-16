@@ -50,10 +50,30 @@ fieldset {
   gap: 1rem;
 }
 
+.icon-hamburger-svg {
+  width: 36px;
+  fill: #333;
+}
+
+.hamburger-open {
+  fill: #333;
+}
+
+.hamburger-close {
+  fill: #fff;
+}
+
+.open-menu,
+.close-menu {
+  cursor: pointer;
+  display: none;
+}
+
 .nav-link {
   padding: 1rem 1.5rem;
   background-color: #333;
   color: #fff;
+  transition: 0.15s ease-in-out;
 
   border-radius: 10px;
 }
@@ -262,6 +282,10 @@ li:last-child .nav-link:hover {
   gap: 1rem;
 }
 
+.about-article p:last-of-type {
+  margin-bottom: 1rem;
+}
+
 .about-container img {
   width: 30%;
   height: 70%;
@@ -336,7 +360,6 @@ li:last-child .nav-link:hover {
   fill: #777;
 }
 
-
 @media(max-width: 1048px) {
   a {
     font-size: 14px;
@@ -349,5 +372,91 @@ li:last-child .nav-link:hover {
   .socials {
     left: 35px;
     bottom: -20px;
+  }
+
+  @media(max-width: 860px) {
+    .container-header {
+      padding-left: 8vw;
+      padding-right: 8vw;
+    }
+
+    .icon-header {
+      width: 160px;
+    }
+
+    .container-nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      background-color: #333;
+
+      transition: all 0.2s ease-in-out;
+    }
+
+    .nav-item:last-of-type {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-item {
+      margin-bottom: 80px;
+    }
+
+    .nav-link {
+      font-size: 20px;
+      padding: 1.5rem 2rem;
+    }
+
+    .socials {
+      gap: 4rem;
+      text-align: center;
+      left: 10px;
+    }
+
+    .social {
+      fill: #fff;
+      margin-top: 100px;
+      width: 40px;
+    }
+
+    .open-menu {
+      display: block;
+    }
+
+    .close-menu {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+
+    .hero-content {
+      align-items: center;
+    }
+
+    .hero-title,
+    .hero-text {
+      max-width: 80%;
+      text-align: center;
+    }
+
+    .about-container {
+      flex-direction: column-reverse;
+    }
+
+    .about-container img {
+      width: 300px;
+    }
+
+    .about-article {
+      text-align: center;
+    }
   }
 }

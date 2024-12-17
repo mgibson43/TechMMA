@@ -1,5 +1,7 @@
 'use strict'
 
+import { sendText } from 'sendText';
+
 const swiper = new Swiper('.swiper', {
   loop: true,
   grabCursor: true,
@@ -34,6 +36,7 @@ const swiper = new Swiper('.swiper', {
 const open = document.querySelector('.open-menu');
 const close = document.querySelector('.close-menu');
 const menu = document.querySelector('.container-nav');
+const 
 
 function openMenu() {
   menu.style.right = "0";

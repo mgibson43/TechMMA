@@ -14,10 +14,6 @@ app.use(cors());
 app.use(urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '/public')));
 
-const a = {
-  name: 'amit',
-  phone: '123456789',
-};
 app.get('/', (req,res) => {
   try {
     res.sendFile(path.join(__dirname, 'public/html', 'index.html'));
@@ -30,6 +26,16 @@ app.get('/', (req,res) => {
     });
   }
 });
+
+app.post('/', (req,res) => {
+  const name = `${response.body.fName} ${request.body.lName}`;
+  const email = request.body.email;
+  const phone = request.body.phone;
+
+  text.sendText(name, phone, email);
+
+  response.status(200).sendFile(path.join(__dirname, 'public/html', 'confirmation.html'));
+})
 
 app.listen(port, (err) => {
   console.log(`running server on port: ${port}`, err);

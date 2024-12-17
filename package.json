@@ -23,6 +23,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.6.2"
+    "@glidejs/glide": "^3.6.2",
+    "swiper": "^11.1.15"
   }
 }

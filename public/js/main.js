@@ -34,6 +34,7 @@ const swiper = new Swiper('.swiper', {
 const open = document.querySelector('.open-menu');
 const close = document.querySelector('.close-menu');
 const menu = document.querySelector('.container-nav');
+const getStarted = document.getElementById('nav-get-started');
 
 function openMenu() {
   menu.style.right = "0";
@@ -47,6 +48,7 @@ function closeMenu() {
 
 open.addEventListener('click', openMenu);
 close.addEventListener('click', closeMenu);
+getStarted.addEventListener('click', closeMenu);
 
 // const navLists = document.querySelectorAll('.nav-subtab');
 // const programs = document.querySelectorAll('.programs');

@@ -418,7 +418,7 @@ li:last-child .nav-link:hover {
   }
 
   .nav-item {
-    margin-bottom: 40px;
+    margin-top: 40px;
   }
 
   .nav-link {
@@ -434,7 +434,7 @@ li:last-child .nav-link:hover {
 
   .social {
     fill: #fff;
-    margin-top: 100px;
+    margin-top: 60px;
     width: 40px;
   }
 

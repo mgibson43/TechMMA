@@ -385,7 +385,7 @@ li:last-child .nav-link:hover {
   }
 }
 
-@media(max-width: 860px) {
+@media(max-width: 880px) {
   .container-header {
     padding-left: 8vw;
     padding-right: 8vw;
@@ -418,7 +418,7 @@ li:last-child .nav-link:hover {
   }
 
   .nav-item {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .nav-link {

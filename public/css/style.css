@@ -389,6 +389,32 @@ li:last-child .nav-link:hover {
   }
 }
 
+/* Adult-Programs */
+
+.programs-adult {
+  margin: 0 auto;
+  margin-top: 98px;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8rem;
+}
+
+.program-adult {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 3rem;
+}
+
+.program-adult img {
+  max-width: 400px;
+  border-radius: 12px;
+}
+
 @media(max-width: 880px) {
   * {
     overflow-x: hidden;

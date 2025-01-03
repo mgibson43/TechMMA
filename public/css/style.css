@@ -258,7 +258,8 @@ li:last-child .nav-link:hover {
   border-radius: 10px;
 }
 
-.form-submit {
+.form-submit,
+.program-adult a {
   background-color: #b10707;
   cursor: pointer;
   border: none;
@@ -269,7 +270,8 @@ li:last-child .nav-link:hover {
   padding: .75rem 1.5rem;
 }
 
-.form-submit:hover {
+.form-submit:hover,
+.program-adult a:hover {
   background-color: #830c0c;
 }
 
@@ -389,32 +391,6 @@ li:last-child .nav-link:hover {
   }
 }
 
-/* Adult-Programs */
-
-.programs-adult {
-  margin: 0 auto;
-  margin-top: 98px;
-  max-width: 80vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  gap: 8rem;
-}
-
-.program-adult {
-  display: flex;
-  justify-content: space-between;
-
-  gap: 3rem;
-}
-
-.program-adult img {
-  max-width: 400px;
-  border-radius: 12px;
-}
-
 @media(max-width: 880px) {
   * {
     overflow-x: hidden;
@@ -514,5 +490,4 @@ li:last-child .nav-link:hover {
   .quick-access-content {
     flex-direction: column;
   }
-
 }

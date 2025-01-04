@@ -62,7 +62,9 @@
 @media(max-width: 880px) {
 
   .programs-adult {
-    margin-top: 44px;
+    margin-top: 5px;
+
+    gap: 4rem;
   }
   
   .program-adult {
@@ -70,11 +72,18 @@
     align-items: center;
     justify-content: center;
 
+    gap: 1rem;
+
     text-align: center;
   }
 
   .program-adult div {
     align-items: center;
+    height: 27rem;
+  }
+
+  .program-adult img {
+    width: 325px;
   }
 
   .program-adult span {

@@ -59,6 +59,11 @@
   margin-bottom: 4rem;
 }
 
+.programs-adult h3 {
+  font-size: 48px;
+  color: #222;
+}
+
 @media(max-width: 880px) {
 
   .programs-adult {

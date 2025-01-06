@@ -30,6 +30,8 @@ fieldset {
   border: none;
 }
 
+
+
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -391,7 +393,7 @@ li:last-child .nav-link:hover {
   }
 }
 
-@media(max-width: 880px) {
+@media(max-width: 900px) {
   * {
     overflow-x: hidden;
   }

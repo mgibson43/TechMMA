@@ -51,7 +51,7 @@ close.addEventListener('click', closeMenu);
 getStarted.addEventListener('click', closeMenu);
 
 // const navLists = document.querySelectorAll('.nav-subtab');
-// const programs = document.querySelectorAll('.programs');
+// const dropdown = document.querySelectorAll('.dropdown');
 
 // const hideElement = function(element) {
 //   element.classList.add('hidden');
@@ -61,7 +61,8 @@ getStarted.addEventListener('click', closeMenu);
 //   element.classList.remove('hidden');
 // }
 
-// programs.forEach(program => {
+// dropdown.forEach(program => {
+//   console.log('hi');
 //   program.addEventListener('mouseover', function() {
 //     showElement(program.lastElementChild);
 //   });

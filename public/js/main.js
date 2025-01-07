@@ -39,6 +39,7 @@ const getStarted = document.getElementById('nav-get-started');
 function openMenu() {
   menu.style.right = "0";
   close.style.display = "block";
+  console.log('hi');
 }
 
 function closeMenu() {

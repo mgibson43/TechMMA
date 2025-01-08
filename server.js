@@ -27,6 +27,71 @@ app.get('/', (req,res) => {
   }
 });
 
+app.get('/adult-programs', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html', 'adult-programs.html'));
+
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/kids-programs', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html', 'kids-programs.html'));
+
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/instructors', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html', 'instructors.html'));
+
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/confirmation', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html', 'confirmation.html'));
+
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/adult-programs/combat-fitness', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/adult-programs', 'combat-fitness.html'));
+
+  } catch (error) {
+    res.json({
+      msg: 'Error, hi',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
 app.post('/', (req,res) => {
   const name = `${req.body.fname} ${req.body.lname}`;
   const email = req.body.email;

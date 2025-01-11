@@ -66,6 +66,32 @@ app.get('/instructors', (req,res) => {
   }
 });
 
+app.get('/adult-programs/cardio-kickboxing', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/adult-programs', 'cardio-kickboxing.html'));
+
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/adult-programs/combat-fit', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/adult-programs', 'combat-fit.html'));
+
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
 app.get('/confirmation', (req,res) => {
   try {
     res.sendFile(path.join(__dirname, 'public/html', 'confirmation.html'));

@@ -27,7 +27,7 @@ app.get('/', (req,res) => {
   }
 });
 
-app.get('/adult-programs', (req,res) => {
+app.get('/Adult-Programs', (req,res) => {
   try {
     res.sendFile(path.join(__dirname, 'public/html', 'adult-programs.html'));
 
@@ -40,7 +40,7 @@ app.get('/adult-programs', (req,res) => {
   }
 });
 
-app.get('/kids-programs', (req,res) => {
+app.get('/Kids-Programs', (req,res) => {
   try {
     res.sendFile(path.join(__dirname, 'public/html', 'kids-programs.html'));
 
@@ -53,7 +53,7 @@ app.get('/kids-programs', (req,res) => {
   }
 });
 
-app.get('/instructors', (req,res) => {
+app.get('/Instructors', (req,res) => {
   try {
     res.sendFile(path.join(__dirname, 'public/html', 'instructors.html'));
 
@@ -66,20 +66,7 @@ app.get('/instructors', (req,res) => {
   }
 });
 
-app.get('/adult-programs/cardio-kickboxing', (req,res) => {
-  try {
-    res.sendFile(path.join(__dirname, 'public/html/adult-programs', 'cardio-kickboxing.html'));
-
-  } catch (error) {
-    res.json({
-      msg: 'Error',
-      Code: 404,
-      err: error,
-    });
-  }
-});
-
-app.get('/confirmation', (req,res) => {
+app.get('/Confirmation', (req,res) => {
   try {
     res.sendFile(path.join(__dirname, 'public/html', 'confirmation.html'));
 
@@ -92,7 +79,7 @@ app.get('/confirmation', (req,res) => {
   }
 });
 
-app.get('/adult-programs/combat-fitness', (req,res) => {
+app.get('/Adult-Programs/Combat-Fitness', (req,res) => {
   try {
     res.sendFile(path.join(__dirname, 'public/html/adult-programs', 'combat-fitness.html'));
 
@@ -105,10 +92,71 @@ app.get('/adult-programs/combat-fitness', (req,res) => {
   }
 });
 
-app.get('/adult-programs/krav-maga', (req,res) => {
+app.get('/Adult-Programs/Cardio-Kickboxing', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/adult-programs', 'cardio-kickboxing.html'));
+
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/Adult-Programs/Krav-Maga', (req,res) => {
   try {
     res.sendFile(path.join(__dirname, 'public/html/adult-programs', 'krav-maga.html'));
 
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/Adult-Programs/Brazilian-Jiu-Jitsu', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/adult-programs', 'brazilian-jiu-jitsu.html'));
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/Adult-Programs/Full-Contact-Kickboxing', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/adult-programs', 'full-contact-kickboxing.html'));
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/Adult-Programs/Mixed-Martial-Arts', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/adult-programs', 'mixed-martial-arts.html'));
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/Adult-Programs/Private-Training', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/adult-programs', 'private-training.html'));
   } catch (error) {
     res.json({
       msg: 'Error',

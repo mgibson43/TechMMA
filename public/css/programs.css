@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   gap: 4rem;
+
+  padding-top: 3rem;
 }
 
 .program-article article {
@@ -31,6 +33,7 @@
   padding: .75rem 1.5rem;
   background-color: #333;
   color: #fff;
+  font-weight: 600;
   transition: 0.15s ease-in-out;
 
   border-radius: 10px;
@@ -39,6 +42,12 @@
 
 .program-article a:hover {
   background-color: #830c0c; 
+}
+
+.program-article p,
+.program-article li {
+  font-size: 18px;
+  line-height: 1.75;
 }
 
 .program-article p {

@@ -166,6 +166,42 @@ app.get('/Adult-Programs/Private-Training', (req,res) => {
   }
 });
 
+app.get('/Kids-Programs/Kids-TKD-Kickboxing', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/kids-programs', 'kids-tkd-kickboxing.html'));
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/Kids-Programs/Kids-Brazilian-Jiu-Jitsu', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/kids-programs', 'kids-bjj-wrestling.html'));
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/Kids-Programs/American-Ninja-Warrior-Adventure', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/kids-programs', 'ninja-warrior.html'));
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
 app.post('/', (req,res) => {
   const name = `${req.body.fname} ${req.body.lname}`;
   const email = req.body.email;

@@ -202,6 +202,42 @@ app.get('/Kids-Programs/American-Ninja-Warrior-Adventure', (req,res) => {
   }
 });
 
+app.get('/Kids-Programs/After-School-Program', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/kids-programs', 'after-school.html'));
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/Kids-Programs/Birthday-Parties', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/kids-programs', 'birthday-parties.html'));
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
+app.get('/Kids-Programs/Summer-Camp', (req,res) => {
+  try {
+    res.sendFile(path.join(__dirname, 'public/html/kids-programs', 'summer-camp.html'));
+  } catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
+});
+
 app.post('/', (req,res) => {
   const name = `${req.body.fname} ${req.body.lname}`;
   const email = req.body.email;

@@ -50,7 +50,9 @@
   line-height: 1.75;
 }
 
-.program-article p {
+.program-article p,
+.program-article h3,
+.program-article h4 {
   text-align: center;
 }
 

@@ -423,6 +423,12 @@ li:last-child .nav-link:hover {
   z-index: 9999;
 }
 
+.disabled {
+  pointer-events: none;
+  background-color: #830c0c;
+  color: #ddd
+}
+
 @media(max-width: 1048px) {
   a {
     font-size: 14px;

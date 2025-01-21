@@ -239,13 +239,26 @@ app.get('/Kids-Programs/Summer-Camp', (req,res) => {
 });
 
 app.post('/', (req,res) => {
-  const name = `${req.body.fname} ${req.body.lname}`;
-  const email = req.body.email;
-  const phone = req.body.phone;
+  try {
+    const name = `${req.body.fname} ${req.body.lname}`;
+    const email = req.body.email;
+    const phone = req.body.phone;
 
-  text.sendText(name, phone, email);
+    const fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+  
+    text.sendText(name, phone, email);
 
-  res.status(200).sendFile(path.join(__dirname, 'public/html', 'confirmation.html'));
+    const scroll = req.query.scroll || 0;
+  
+    res.status(204).send();
+  }
+  catch (error) {
+    res.json({
+      msg: 'Error',
+      Code: 404,
+      err: error,
+    });
+  }
 })
 
 app.listen(port, (err) => {
